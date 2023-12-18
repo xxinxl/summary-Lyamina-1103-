@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./base-javascript.css">
+</head>
+<body>
+    <div>
+        <div class="block">
+            <table>
+                <thead>
+                  <tr>
+                    <th colspan="2" class="head">Типы данных и свойства</th>
+                    <th  class="head" >Исключения</th>
+                    <th class="head">Методы</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="color">
+                    <td>Number</td>
+                    <td>NaN (Not a Number), Infinity, -Infinity.</td>
+                    <td>Null (относится к числам, но при преобразовании имеет значение 0).</td>
+                    <td>isFinite(), isNaN()</td>
+                  </tr>
+                  <tr>
+                    <td>String</td>
+                    <td>length (длина строки)</td>
+                    <td>Null (преобразуется в строку "null")</td>
+                    <td>charAt(), concat(), indexOf(), slice(), toLowerCase(), toUpperCase()</td>
+                  </tr>
+                  <tr class="color">
+                    <td>Boolean</td>
+                    <td>Отсутствуют</td>
+                    <td>Null, undefined, 0, NaN, '' (пустая строка) приводятся к false</td>
+                    <td>Отсутствуют</td>
+                  </tr>
+                  <tr>
+                    <td>Object</td>
+                    <td>Отсутствуют (но объекты имеют свойства, заданные пользователем)</td>
+                    <td>Null (преобразуется в объект с отсутствующими свойствами)</td>
+                    <td>hasOwnProperty(), isPrototypeOf(), propertyIsEnumerable()</td>
+                  </tr>
+                  <tr class="color">
+                    <td>Array</td>
+                    <td>length (длина массива)</td>
+                    <td>Null (преобразуется в пустой массив)</td>
+                    <td>concat(), join(), pop(), push(), shift(), unshift(), slice(), splice()</td>
+                  </tr>
+                  <tr>
+                    <td>Function</td>
+                    <td>arguments (аргументы функции), length (количество аргументов)</td>
+                    <td>Null (преобразуется в функцию без аргументов)</td>
+                    <td>apply(), call()</td>
+                  </tr>
+                  <tr class="color">
+                    <td>Undefined</td>
+                    <td>Отсутствуют</td>
+                    <td>Отсутствуют</td>
+                    <td>Отсутствуют</td>
+                  </tr>
+                  <tr>
+                    <td>Null</td>
+                    <td>Отсутствуют</td>
+                    <td>Отсутствуют</td>
+                    <td>Отсутствуют</td>
+                  </tr>
+
+        <div class="block"><table>
+            <thead>
+              <tr class="head">
+                <th>Структуры данных</th>
+                <th>Описание</th>
+                <th>Примеры</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="color">
+                <td>Массив (Array)</td>
+                <td>Упорядоченная коллекция элементов</td>
+                <td>push(), pop(), shift(), unshift(), splice(), slice(), forEach(), map()</td>
+              </tr>
+              <tr>
+                <td>Стек (Stack)</td>
+                <td>Коллекция элементов с принципом Last In, First Out (LIFO)</td>
+                <td>push(), pop(), peek()</td>
+              </tr>
+              <tr class="color">
+                <td>Очередь (Queue)</td>
+                <td>Коллекция элементов с принципом First In, First Out (FIFO)</td>
+                <td>enqueue(), dequeue(), peek()</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        <div class="block"><table>
+            <thead>
+              <tr class="head">
+                <th>Арифметические операции</th>
+                <th>Описание</th>
+                <th>Пример</th>
+                <th>Результат</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="color">
+                <td>Сложение(+)</td>
+                <td>Складывает два операнда</td>
+                <td>3 + 5</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Вычитание(-)</td>
+                <td>Вычитает правый операнд из левого</td>
+                <td>7 - 2</td>
+                <td>5</td>
+              </tr>
+              <tr class="color">
+                <td>Умножение (*)</td>
+                <td>Умножает два операнда</td>
+                <td>4 * 6</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>Деление(/)</td>
+                <td>Делит левый операнд на правый</td>
+                <td>8 / 2</td>
+                <td>4</td>
+              </tr>
+              <tr class="color">
+                <td>Остаток от деления (%)</td>
+                <td>Возвращает остаток от деления левого операнда на правый</td>
+                <td>9 % 4</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Инкремент (++)</td>
+                <td>Увеличивает операнд на 1</td>
+                <td>let x = 3; x += 1;</td>
+                <td>x = 4</td>
+              </tr>
+              <tr class="color">
+                <td>Декремент (--)</td>
+                <td>Уменьшает операнд на 1</td>
+                <td>let y = 7; y -= 1;</td>
+                <td>y = 6</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        <div class="block"><table>
+            <thead class="head">
+              <tr>
+                <th class="head">Функции Math (My)</th>
+                <th>Описание</th>
+                <th>Пример</th>
+                <th>Результат</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="color">
+                <td>Math.abs()</td>
+                <td>Возвращает абсолютное значение числа</td>
+                <td>Math.abs(-5)</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <td>Math.floor()</td>
+                <td>Округляет число вниз до ближайшего целого</td>
+                <td>Math.floor(4.9)</td>
+                <td>4</td>
+              </tr>
+              <tr class="color">
+                <td>Math.max()</td>
+                <td>Возвращает наибольшее из набора чисел</td>
+                <td>Math.max(2, 7, 1)</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>Math.min()</td>
+                <td>Возвращает наименьшее из набора чисел</td>
+                <td>Math.min(2, 7, 1)</td>
+                <td>1</td>
+              </tr>
+              <tr class="color">
+                <td>Math.random()</td>
+                <td>Возвращает псевдослучайное число в интервале [0, 1)</td>
+                <td>Math.random()</td>
+                <td>0.37468292964971775</td>
+              </tr>
+              <tr>
+                <td>Math.pow()</td>
+                <td>Возвращает значение числа, возведенного в степень</td>
+                <td>Math.pow(2, 3)</td>
+                <td>8</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        <div class="block"><table>
+            <thead class="head">
+              <tr>
+                <th>Функции lodash</th>
+                <th>Описание</th>
+                <th>Пример</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="color">
+                <td>_.map()</td>
+                <td>Преобразует каждый элемент коллекции с использованием переданной функции</td>
+                <td>_.map([1, 2, 3], function(n) { return n * 2; })</td>
+              </tr>
+              <tr>
+                <td>_.filter()</td>
+                <td>Отфильтровывает элементы коллекции на основе предиката</td>
+                <td>_.filter([1, 2, 3, 4], function(n) { return n % 2 === 0; })</td>
+              </tr>
+              <tr class="color">
+                <td>_.reduce()</td>
+                <td>Сводит коллекцию к значению, используя аккумулятор и функцию</td>
+                <td>_.reduce([1, 2, 3], function(sum, n) { return sum + n; }, 0)</td>
+              </tr>
+              <tr>
+                <td>_.sortBy()</td>
+                <td>Сортирует элементы коллекции на основе указанных ключей или функций</td>
+                <td>_.sortBy([{ 'name': 'John' }, { 'name': 'Doe' }], 'name')</td>
+              </tr>
+              <tr class="color">
+                <td>_.debounce()</td>
+                <td>Создает функцию-декоратор, которая откладывает вызов функции до тех пор, пока проходит указанный интервал времени между ее вызовами</td>
+                <td>var debounced = _.debounce(func, 2000)</td>
+              </tr>
+              <tr>
+                <td>_.clone()</td>
+                <td>Создает копию значения, рекурсивно копируя все свойства</td>
+                <td>var objects = [{ 'a': 1 }, { 'b': 2 }]; var deep = _.cloneDeep(objects);</td>
+              </tr>
+              <tr class="color">
+                <td>_.isEqual()</td>
+                <td>Сравнивает два объекта на равенство. Рекурсивное сравнение</td>
+                <td>_.isEqual(object, other)</td>
+              </tr>
+              <tr>
+                <td>_.memoize()</td>
+                <td>Мемоизация результата выполнения функции для ускорения последующих вызовов с теми же аргументами</td>
+                <td>var memoized = _.memoize(func)</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        <div class="block"><table>
+            <thead class="head">
+              <tr>
+                <th>Логические операции</th>
+                <th>Описание</th>
+                <th>Пример</th>
+                <th>Результат</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="color">
+                <td>Логическое И (&&)</td>
+                <td>Возвращает true, если оба операнда истинны</td>
+                <td>(5 > 3) && (10 < 20)</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td>Логическое ИЛИ (||)</td>
+                <td>Возвращает true, если хотя бы один из операндов истинен</td>
+                <td>(5 > 3) || (10 > 20)</td>
+                <td>true</td>
+              </tr>
+              <tr class="color">
+                <td>Логическое НЕ (!)</td>
+                <td>Инвертирует значение операнда (если истина, то становится ложью, и наоборот)</td>
+                <td>!(5 > 3)</td>
+                <td>false</td>
+              </tr>
+              <tr>
+                <td>Логическое И с присваиванием (&&=)</td>
+                <td>Присваивает второй операнд первому, если оба истинны</td>
+                <td>let a = true; a &&= (10 < 20)</td>
+                <td></td>
+              </tr>
+              <tr class="color">
+                <td>Логическое ИЛИ с присваиванием (||=)</td>
+                <td>Присваивает второй операнд первому, если хотя бы один из них истинен</td>
+                <td>let b = false; b ||= (10 > 20)</td>
+                <td>b = false</td>
+              </tr>
+              <tr>
+                <td>Тернарный оператор (?:)</td>
+                <td>Возвращает значение в зависимости от условия</td>
+                <td>let x = (5 > 3) ? 'Да' : 'Нет'</td>
+                <td>x = 'Да'</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        <div class="block"><table>
+            <thead class="head">
+              <tr>
+                <th>Алгоритмические конструкции</th>
+                <th>Описание</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="color">
+                <td>Условие (if-else)</td>
+                <td>Выполняет блок кода, если условие истинно, и блок кода в противном случае</td>
+              </tr>
+              <tr>
+                <td>Цикл while</td>
+                <td>Повторяет блок кода, пока условие истинно</td>
+              </tr>
+              <tr class="color">
+                <td>Цикл do-while</td>
+                <td>Повторяет блок кода, пока условие истинно, хотя бы один раз</td>
+              </tr>
+              <tr>
+                <td>Цикл for</td>
+                <td>Повторяет блок кода с предопределенным числом итераций</td>
+              </tr>
+              <tr class="color">
+                <td>Цикл for...in</td>
+                <td>Итерируется по перечисляемым свойствам объекта</td>
+              </tr>
+              <tr>
+                <td>Цикл for...of</td>
+                <td>Итерируется по итерируемым объектам (массивам, строкам, и т. д.)</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+        <div class="block"><table>
+            <thead class="head">
+              <tr>
+                <th>Функции</th>
+                <th>Способ объявления</th>
+                <th>Пример использования</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="color">
+                <td>Обычная функция (function declaration)</td>
+                <td>Объявляется с использованием ключевого слова function. Например, function sum(a, b) { return a + b; }</td>
+                <td>Вызывается, например, как sum(2, 3), что вернет 5</td>
+              </tr>
+              <tr>
+                <td>Функция-выражение (function expression)</td>
+                <td>Функция присваивается переменной. Например, const multiply = function(a, b) { return a * b; }</td>
+                <td>Вызывается, например, как multiply(2, 3), что вернет 6</td>
+              </tr>
+              <tr class="color">
+                <td>Стрелочная функция (arrow function)</td>
+                <td>Используется синтаксис с стрелкой =>. Например, const square = (x) => { return x * x; }</td>
+                <td>Вызывается, например, как square(4), что вернет 16</td>
+              </tr>
+              <tr>
+                <td>Импорт и экспорт функций</td>
+                <td>Функции могут быть экспортированы из одного файла и импортированы в другом</td>
+                <td>Пример импорта и использования экспортированной функции из другого файла</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+    </div>
+</body>
+</html>

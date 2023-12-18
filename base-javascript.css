@@ -1,0 +1,15 @@
+.block {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 400px;
+    margin-right: 400px;
+    font-family: sans-serif;
+}
+
+.head {
+    background: #89d0fe;
+}
+
+.color {
+    background: #eaf7ff;
+}
